@@ -1,44 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#050510" 
-    android:orientation="vertical"
-    android:padding="20dp">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ARKANA CONTROL"
-        android:textColor="#BC13FE"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:layout_marginBottom="30dp" />
+    android:background="#050510">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:drawable/dialog_holo_dark_frame"
         android:orientation="vertical"
-        android:padding="15dp"
-        android:layout_marginBottom="15dp">
+        android:padding="20dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Símbolos Sagrados (10 Gratis)"
-            android:textColor="#00FFFF"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:text="ARKANA CONTROL"
+            android:textColor="#BC13FE"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:shadowColor="#BC13FE"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/dialog_holo_dark_frame"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Símbolos Sagrados"
+                android:textColor="#00FFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Activa los 10 primeros símbolos gratis."
+                android:textColor="#8888AA"
+                android:textSize="14sp"
+                android:layout_marginBottom="15dp" />
+
+            <Switch
+                android:id="@+id/switch_simbolos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado: "
+                android:textColor="#FFFFFF"
+                android:thumbTint="#00FFFF"
+                android:trackTint="#BC13FE" />
+        </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Activa los primeros 10 símbolos de poder neón."
-            android:textColor="#8888AA"
-            android:textSize="14sp" />
+            android:text="👁️ 333 👁️"
+            android:textColor="#BC13FE"
+            android:layout_gravity="center"
+            android:alpha="0.5"
+            android:layout_marginTop="20dp" />
+
     </LinearLayout>
-
-</LinearLayout>
+</ScrollView>
 
