@@ -1,13 +1,32 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.2.2'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 30
+    namespace 'com.alquimista.arkana'
+    compileSdk 34
+
     defaultConfig {
-        applicationId "com.alquimista333.arkana"
-        minSdkVersion 21
-        targetSdkVersion 30
+        applicationId "com.alquimista.arkana"
+        minSdk 21
+        targetSdk 34
         versionCode 1
-        versionName "1.0-Arkana"
+        versionName "1.0"
     }
 }
 
