@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<input-method xmlns:android="http://schemas.android.com/apk/res/android"
+    android:settingsActivity="com.alquimista333.arkana.SettingsActivity"
+    android:icon="@mipmap/ic_launcher">
+    <subtype
+        android:label="Español (Arkana)"
+        android:imeSubtypeLocale="es_ES"
+        android:imeSubtypeMode="keyboard" />
+</input-method>
+
