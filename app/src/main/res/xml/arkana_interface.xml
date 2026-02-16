@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10%p"
+    android:horizontalGap="0px"
+    android:verticalGap="0px"
+    android:keyHeight="60dp">
+
+    <Row>
+        <Key android:codes="49" android:keyLabel="👁️" android:keyEdgeFlags="left"/>
+        <Key android:codes="50" android:keyLabel="🔯"/>
+        <Key android:codes="51" android:keyLabel="🧬"/>
+        <Key android:codes="52" android:keyLabel="🌀"/>
+        <Key android:codes="53" android:keyLabel="💎"/>
+        <Key android:codes="54" android:keyLabel="🦾"/>
+        <Key android:codes="55" android:keyLabel="🌌"/>
+        <Key android:codes="56" android:keyLabel="⚡"/>
+        <Key android:codes="57" android:keyLabel="🔱"/>
+        <Key android:codes="48" android:keyLabel="🛸" android:keyEdgeFlags="right"/>
+    </Row>
+</Keyboard>
+
