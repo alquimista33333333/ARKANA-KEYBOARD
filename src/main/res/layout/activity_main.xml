@@ -1,65 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#050510"
-    android:orientation="vertical"
     android:padding="15dp">
 
     <LinearLayout
+        android:id="@+id/contenedor_visor"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="200dp"
         android:background="@android:drawable/dialog_holo_dark_frame"
         android:backgroundTint="#00FFFF"
-        android:padding="3dp"
-        android:layout_marginBottom="20dp">
+        android:padding="5dp"
+        android:layout_alignParentTop="true">
 
-        <EditText
-            android:id="@+id/visor_escritura"
+        <TextView
+            android:id="@+id/visor_info"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#000000"
-            android:gravity="top"
-            android:hint="Los símbolos aparecerán aquí..."
-            android:padding="15dp"
+            android:gravity="center"
+            android:text="SISTEMA ARKANA: ESPERANDO SEÑAL..."
             android:textColor="#00FFFF"
-            android:textColorHint="#333333"
-            android:textSize="22sp" />
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:padding="10dp" />
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="ARKANA CONTROL"
-        android:textColor="#BC13FE"
-        android:textSize="12sp"
-        android:layout_marginBottom="20dp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
         android:orientation="vertical"
-        android:gravity="center"
-        android:layout_gravity="center">
+        android:gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CONCIENCIA 33" 
-            android:textColor="#00FFFF"
-            android:textSize="10sp"
-            android:layout_marginBottom="5dp"/>
+            android:text="RESONANCIA SCHUMANN" 
+            android:textColor="#BC13FE"
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp"/>
 
         <Button
-            android:id="@+id/boton_estrella"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:id="@+id/boton_schumann"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
             android:text="🔯"
             android:backgroundTint="#151540"
-            android:textColor="#BC13FE"
-            android:textSize="30sp" />
+            android:textColor="#00FFFF"
+            android:textSize="35sp"
+            android:elevation="15dp" />
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>
 
